@@ -1,5 +1,5 @@
 """ Lab 17, Question 2: Access GitHub's API to plot the most popular repos for a programming language
-    (using Ruby instead of Python) """
+    (using Ruby instead of Python, because it was my first programming language) """
 
 # Josh Platt, 5/9/2025
 
@@ -21,7 +21,7 @@ print(f"Status code: {r.status_code}")
 response_dict = r.json()
 print(f"Complete results: {not response_dict['incomplete_results']}")
 
-# Processes the repo information into different dicts
+# Processes the repo information & initialize various dicts for later use
 repo_dicts = response_dict['items']
 repo_links, stars, hover_texts = [], [], []
 
